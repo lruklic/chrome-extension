@@ -1,0 +1,17 @@
+{
+    "manifest_version" : 2,
+    "name" : "The Real Headline",
+    "version" : "0.1",
+    "content_scripts": [
+        {
+          "matches": [
+            "https://www.jutarnji.hr/*",
+            "https://www.index.hr/*"
+          ],
+          "js": ["jquery-3.4.1.min.js", "util.js", "content.js"]
+        }
+    ],
+    "background": {
+        "scripts": ["background.js"]
+    }
+}
